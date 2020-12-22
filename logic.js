@@ -3,7 +3,6 @@ let counter = 1;
 function mostraNota() {
 
     var newNode = document.createElement('div');
-    newNode.className = 'row';
 
     var numero = document.createElement('div');
     numero.className = "col";
@@ -27,19 +26,25 @@ function mostraNota() {
 
     var notaFinal = document.createElement('div');
     notaFinal.className = "col";
-    let resultado = ((document.getElementById("primeiraNota").value +
-        document.getElementById("segundaNota").value) / 2);
+    let resultado = ((document.getElementById("primeiraNota").value / 2 +
+        document.getElementById("segundaNota").value / 2));
     notaFinal.innerHTML = resultado;
     newNode.appendChild(notaFinal);
 
-    document.getElementById('resultados').appendChild(newNode);
+    var frequencia = document.createElement('div');
+    frequencia.className = "col";
+    frequencia.innerHTML = document.getElementById("frequencia").value + " %";
+    newNode.appendChild(frequencia);
 
-    if ((resultado >= 7) && document.getElementById("frequencia").value > 70) {
-        let color = "aprovado";
+
+    if ((resultado >= 7) && document.getElementById("frequencia").value >= 70) {
+        var color = "aprovado";
     } else {
-        let color = "reprovado";
+        var color = "reprovado";
     }
 
+    newNode.className = "row " + color;
+    document.getElementById('resultados').appendChild(newNode);
 
 
     counter++;

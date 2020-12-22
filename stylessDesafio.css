@@ -121,3 +121,11 @@ nav {
     background-color: darkgoldenrod;
     font-size: 1vw;
 }
+
+.aprovado {
+    background-color: green;
+}
+
+.reprovado {
+    background-color: red;
+}
