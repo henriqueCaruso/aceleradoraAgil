@@ -1,0 +1,50 @@
+.questao{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: chartreuse;
+    border: 2px solid black;
+    padding: 2px;
+}
+.proximo{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    background-color: chartreuse;
+    border: 2px solid black;
+    padding: 2px;
+}
+body {
+    width: 750px;
+    margin: auto;
+}
+header {
+    background-color: mediumpurple;
+    height: 100px;
+}
+
+aside {
+    width: 100%;
+    height: 150px;
+}
+
+.menuEsquerdo {
+    background-color: firebrick;
+}
+
+.menuDireito {
+    background-color: lightgreen;
+}
+
+.conteudo {
+    width: 100%;
+    background-color: lightblue;
+    height: 450px;
+}
+
+.main{
+    width: 100%;
+    display: inline-flex;
+    flex-grow: 1;
+}

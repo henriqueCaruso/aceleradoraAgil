@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylessDesafio.css">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <div class="questao">
+        Desafio
+    </div>
+    <header>
+        <div class="topo">Topo</div>
+        <div class="container-fluid menuPrincipal">
+            <div class="row">
+                <a class="col-3 rounded-pill" href=”#”>
+                    <div>Link1</div>
+                </a>
+                <a class="col-3 rounded-pill" href=”#”>
+                    <div>Link2</div>
+                </a>
+                <a class="col-3 rounded-pill" href=”#”>
+                    <div>Link3</div>
+                </a>
+                <a class="col-3 rounded-pill" href=”#”>
+                    <div>Link4</div>
+                </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="main ">
+        <aside class="menuEsquerdo border-end">
+            <ul>
+                <li class="rounded-pill"><a class="colNav" href=”#”>Link1</a></li>
+                <li class="rounded-pill"><a class="colNav" href=”#”>Link2</a></li>
+                <li class="rounded-pill"><a class="colNav" href=”#”>Link3</a></li>
+                <li class="rounded-pill"><a class="colNav" href=”#”>Link4</a></li>
+                <li class="rounded-pill"><a class="colNav" href=”#”>Link5</a></li>
+            </ul>
+
+        </aside>
+        <form class="border-end">
+            <div class="row g-3 p-3 mb-3">
+
+                <div class="col-12">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome" value="" required="">
+                    <div class="invalid-feedback">
+                        Nome completo necessário
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="primeiraNota" class="form-label">Primeira Nota do Semestre</label>
+                    <input type="number" class="form-control" id="primeiraNota" placeholder="Nota do Primeiro Semestre"
+                        value="" required="">
+                    <div class="invalid-feedback">
+                        Nota do priemiro semestre necessário
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="segundaNota" class="form-label">Segunda Nota do Semestre</label>
+                    <input type="number" class="form-control" id="segundaNota" placeholder="Nota do Segundo Semestre"
+                        value="" required="">
+                    <div class="invalid-feedback">
+                        Nota do segundo semestre necessário
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="frequencia" class="form-label" required="">Frequencia</label>
+                    <input type="number" class="form-control" id="frequencia" placeholder="Insira sua Frequencia">
+                    <div class="invalid-feedback">
+                        Frequencia é necessário
+                    </div>
+                </div>
+                <hr>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button submit" onclick="mostraNota();">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <aside class="menuDireito">
+            <div class="container" id="resultados">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col tableHead">Nome</div>
+                    <div class="col tableHead">1 semestre</div>
+                    <div class="col tableHead">2 semestre</div>
+                    <div class="col tableHead">Nota Final</div>
+                    <div class="col tableHead">Frequência</div>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+    <hr>
+    <footer>
+        ...Rodape...
+    </footer>
+
+    <a href="index5.html" class="anterior">
+        Anterior
+    </a>
+</body>
+
+</html>

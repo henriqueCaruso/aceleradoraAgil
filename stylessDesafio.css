@@ -1,0 +1,123 @@
+.questao{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: chartreuse;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+.anterior {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    background-color: chartreuse;
+    border: 2px solid black;
+    padding: 2px;
+    color: black;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    background-color: mediumpurple;
+    height: 80px;
+}
+
+.topo {
+    background-color: mediumpurple;
+    height: 120px;
+}
+
+
+
+aside {
+    width: 100%;
+}
+
+
+.main{
+    width: 100%;
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+
+/*
+CSS 3
+*/
+
+.colNav{
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+.menuEsquerdo li {
+    margin: 0 auto;
+    width:80%;
+}
+.menuEsquerdo {
+    width:40%;
+}
+
+ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+li {
+    list-style: none;
+    height: fit-content;
+    background-color: mediumpurple;
+    padding: 10px 0;
+    border: 1px solid black;
+    color: black;
+
+}
+
+section {
+    width: 100%;
+    text-align: start;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover {
+    color: chartreuse;
+}
+
+nav {
+    color: black;
+    font-size: 16px;
+}
+
+.menuPrincipal {
+    list-style: none;
+    height: fit-content;
+    background-color: mediumpurple;
+    padding: 10px 0;
+    border: 1px solid black;
+    color: black;
+}
+
+.tableHead {
+    background-color: darkgoldenrod;
+    font-size: 1vw;
+}
